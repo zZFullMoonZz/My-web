@@ -1,0 +1,127 @@
+.root {
+    background-color: #11284b;
+    background-size: cover;
+    background-position: center;
+    background-image:
+        linear-gradient(250deg, rgba(138, 30, 201, 0) 40%, rgb(48, 6, 67) 70%),
+        url(https://media.discordapp.net/attachments/1265679454953541693/1276174611209261138/2.png?ex=6737f879&is=6736a6f9&hm=941ae3f197917e539c70241174598a4a7bef8f12066cde49f14f48b32b97059b&=&format=webp&quality=lossless&width=575&height=575);
+    /* Use url() for the image */
+    padding-top: calc(var(--mantine-spacing-xl) * 6);
+    padding-bottom: calc(var(--mantine-spacing-xl) * 3);
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: mantine-breakpoint-md) {
+        flex-direction: column;
+    }
+}
+
+.image {
+    @media (max-width: mantine-breakpoint-md) {
+        display: none;
+    }
+}
+
+.content {
+    padding-top: calc(var(--mantine-spacing-xl) * 2);
+    padding-bottom: calc(var(--mantine-spacing-xl) * 2);
+    margin-right: calc(var(--mantine-spacing-xl) * 3);
+
+    @media (max-width: mantine-breakpoint-md) {
+        margin-right: 0;
+    }
+}
+
+.title {
+    color: var(--mantine-color-white);
+    font-family:
+        Greycliff CF,
+        var(--mantine-font-family);
+    font-weight: 900;
+    line-height: 1.05;
+    max-width: rem(500px);
+    font-size: rem(48px);
+
+    @media (max-width: mantine-breakpoint-md) {
+        max-width: 100%;
+        font-size: rem(34px);
+        line-height: 1.15;
+    }
+}
+
+.description {
+    color: var(--mantine-color-white);
+    opacity: 0.75;
+    max-width: rem(500px);
+
+    @media (max-width: mantine-breakpoint-md) {
+        max-width: 100%;
+    }
+}
+
+.control {
+    padding-left: rem(50px);
+    padding-right: rem(50px);
+    font-family:
+        Greycliff CF,
+        var(--mantine-font-family);
+    font-size: rem(22px);
+
+    @media (max-width: mantine-breakpoint-md) {
+        width: 100%;
+    }
+}
+
+
+.card {
+    height: rem(440px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center;
+}
+
+.title {
+    font-family:
+        Greycliff CF,
+        sans-serif;
+    font-weight: 900;
+    color: var(--mantine-color-white);
+    line-height: 1.2;
+    font-size: rem(32px);
+    margin-top: var(--mantine-spacing-xs);
+}
+
+.category {
+    color: var(--mantine-color-white);
+    opacity: 0.7;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+
+@keyframes mymove {
+    from {
+        right: 200px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+.test {
+    position: relative;
+    animation: mymove 5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
