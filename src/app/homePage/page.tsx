@@ -30,7 +30,7 @@ export default function HeroImageRight() {
                                     gradient={{ from: 'pink', to: 'yellow' }}
                                     style={{ fontSize: ' 5vh', }}
                                 >
-                                    Kittipoom Kunanuklwong
+                                    Kittipoom Kunanuklwong Test Dev
                                 </Text>{' '}
                             </Title>
                             <Text className={classes.description} mt={'md'} size='3vh'> ▫ Front-End [DEV]</Text>
